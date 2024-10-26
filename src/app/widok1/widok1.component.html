@@ -1,0 +1,10 @@
+<p>widok1 works!</p>
+<router-outlet></router-outlet>
+
+<form [formGroup]="currencyForm" (ngSubmit)="onSubmit()" )>
+  <label for="currency">currency:</label>
+  <input type="text" id="currency" formControlName="currency">
+  <label for="name">name:</label>
+  <input type="text" id="name" formControlName="name">
+  <button type="submit" [disabled]="currencyForm.invalid"]></button>
+</form>
