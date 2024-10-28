@@ -8,4 +8,5 @@ export const routes: Routes = [
   {path: "widok1", component: Widok1Component},
   {path: "widok2", component: Widok2Component},
 
+
 ];

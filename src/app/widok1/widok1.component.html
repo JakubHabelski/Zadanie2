@@ -1,10 +1,18 @@
-<p>widok1 works!</p>
 <router-outlet></router-outlet>
 
-<form [formGroup]="currencyForm" (ngSubmit)="onSubmit()" )>
-  <label for="currency">currency:</label>
-  <input type="text" id="currency" formControlName="currency">
-  <label for="name">name:</label>
-  <input type="text" id="name" formControlName="name">
-  <button type="submit" [disabled]="currencyForm.invalid"]></button>
+
+<form [formGroup]="currencyForm" (ngSubmit)="onSubmit()" class="currencyForm">
+  <div class="mb-3">
+    <label for="currency" class="form-label">currency:</label>
+    <input type="text" id="currency" class="form-control" formControlName="currency">
+  </div>
+  <div>
+    <label for="name"  class="form-label">name:</label>
+    <input type="text" id="name" class="form-control" formControlName="name">
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="currencyForm.invalid">Check currency</button>
+  <div>
+    Currency: {{currencyResponse}}
+  </div>
 </form>
+

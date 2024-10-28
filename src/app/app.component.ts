@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterLink, RouterModule, RouterOutlet} from '@angular/router';
 
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpClient, } from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {CommonModule} from '@angular/common';
 
@@ -9,7 +9,7 @@ import {CommonModule} from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, CommonModule, RouterLink, RouterModule],
+  imports: [RouterOutlet, CommonModule, RouterLink, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

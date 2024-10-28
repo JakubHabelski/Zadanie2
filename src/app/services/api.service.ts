@@ -12,7 +12,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  sendData(data: any): Observable<any>{
-    return this.http.post<any>(this.apiUrl, data);
+  sendData(currencyForm: any){
+    return this.http.post(this.apiUrl, currencyForm)
   }
+
 }
